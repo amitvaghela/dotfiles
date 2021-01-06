@@ -59,6 +59,7 @@ cask 'zoom'
 cask 'android-studio'
 cask 'android-platform-tools'
 cask 'istat-menus'
+cask 'bartender'
 
 # Quicklook
 cask 'qlmarkdown'
