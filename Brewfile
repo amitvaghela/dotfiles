@@ -58,6 +58,7 @@ cask 'docker'
 cask 'zoom'
 cask 'android-studio'
 cask 'android-platform-tools'
+cask 'istat-menus'
 
 # Quicklook
 cask 'qlmarkdown'
