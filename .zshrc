@@ -108,4 +108,4 @@ export LANG=en_US.UTF-8
 #
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init - zsh)"
+eval "$(rbenv init - zsh)"
