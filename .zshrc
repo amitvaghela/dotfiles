@@ -111,3 +111,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 source ~/.iterm2_shell_integration.zsh
+
+export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+export PATH="/usr/local/sbin:$PATH"
