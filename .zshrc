@@ -112,12 +112,14 @@ eval "$(rbenv init - zsh)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 source ~/.iterm2_shell_integration.zsh
 
-export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/amit.vaghela/Development/flutter/bin:$PATH"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"export OPENAI_API_KEY='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'
