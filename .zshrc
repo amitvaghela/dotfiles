@@ -123,3 +123,5 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"export 
 OPENAI_API_KEY='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'
+
+echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
