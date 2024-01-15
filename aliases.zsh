@@ -24,9 +24,12 @@ alias nuke="git clean -df && git reset --hard"
 alias pop="git stash pop"
 alias pull="git pull"
 alias push="git push"
+alias pushus='git push --set-upstream origin $(git symbolic-ref --short HEAD)'
 alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
 alias rebase="git rebase"
+alias gpullama='TOKENIZERS_PARALLELISM=true pullama -r . -s $(git rev-parse - abbrev-ref HEAD) -t master'
+
 alias reloadSSHAgenTS="ssh-add ~/.ssh/github_tigerspike && ssh-add ~/.ssh/gitlab_id_rsa && ssh-add ~/.ssh/personal_github && ssh-add ~/.ssh/transport-bitbucket && ssh-add ~/.ssh/cnx-bitbucket"

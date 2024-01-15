@@ -122,4 +122,5 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/usr/local/opt/openjdk/include"export OPENAI_API_KEY='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'
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"export 
+OPENAI_API_KEY='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'
