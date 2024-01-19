@@ -53,6 +53,6 @@ alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
 alias rebase="git rebase"
-alias gpullama='TOKENIZERS_PARALLELISM=true pullama -r . -s $(git rev-parse - abbrev-ref HEAD) -t develop'
+alias gpullama='TOKENIZERS_PARALLELISM=true pullama -r . -s $(git rev-parse -abbrev-ref HEAD) -t develop'
 
 alias reloadSSHAgenTS="ssh-add ~/.ssh/github_tigerspike && ssh-add ~/.ssh/gitlab_id_rsa && ssh-add ~/.ssh/personal_github && ssh-add ~/.ssh/transport-bitbucket && ssh-add ~/.ssh/cnx-bitbucket"

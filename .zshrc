@@ -114,7 +114,9 @@ source ~/.iterm2_shell_integration.zsh
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/amit.vaghela/Development/flutter/bin:$PATH"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$HOME/.pub-cache/bin:$PATH"
+export PATH="/Users/amit.vaghela/.local/bin:$PATH"
+
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
@@ -124,4 +126,137 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"export 
 OPENAI_API_KEY='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'
 
-echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
+echo 'eval "$(pyenv init --path)"' >> ~/.zshrc eval "$(pyenv init --path)"
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
+eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
+for i in ${!paths[@]}; do 
+if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
+fi; done; 
+echo "${paths[*]}"')"
+export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
+command pyenv rehash 2>/dev/null
