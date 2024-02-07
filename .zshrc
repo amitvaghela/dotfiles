@@ -73,13 +73,6 @@ HIST_STAMPS="dd/mm/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$DOTFILES
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(artisan git)
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -108,6 +101,7 @@ export LANG=en_US.UTF-8
 # export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
+eval "$(pyenv init --path)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 source ~/.iterm2_shell_integration.zsh
 
@@ -125,12 +119,3 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"export 
 OPENAI_API_KEY='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'
-
-echo 'eval "$(pyenv init --path)"' >> ~/.zshrc eval "$(pyenv init --path)"
-eval "$(pyenv init --path)" eval PATH="$(bash --norc -ec 'IFS=:; paths=($PATH); 
-for i in ${!paths[@]}; do 
-if [[ ${paths[i]} == "''/Users/amit.vaghela/.pyenv/shims''" ]]; then unset '\''paths[i]'\''; 
-fi; done; 
-echo "${paths[*]}"')"
-export PATH="/Users/amit.vaghela/.pyenv/shims:${PATH}"
-command pyenv rehash 2>/dev/null
