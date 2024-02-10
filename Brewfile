@@ -37,28 +37,14 @@ brew 'node'
 
 # Apps
 cask '1password'
-cask 'caffeine'
-cask 'discord'
-cask 'docker'
-cask 'figma'
-cask 'firefox'
-cask 'github'
-cask 'gpg-suite'
-cask 'imageoptim'
-cask 'slack'
-cask 'telegram-desktop'
 cask 'the-unarchiver'
-cask 'there'
 cask 'visual-studio-code'
-cask 'vlc'
 cask 'whatsapp'
-cask 'tweetbot'
-cask 'docker'
-cask 'zoom'
 cask 'android-studio'
 cask 'android-platform-tools'
 cask 'istat-menus'
 cask 'bartender'
+cask 'raycast'
 
 # Quicklook
 cask 'qlmarkdown'
@@ -67,9 +53,9 @@ cask 'quicklook-csv'
 cask 'provisionql'
 
 # Fonts
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
+# cask 'font-lato'
+# cask 'font-open-sans'
+# cask 'font-roboto'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
@@ -79,20 +65,20 @@ cask 'font-fira-code-nerd-font'
 cask 'font-jetbrains-mono-nerd-font'
 
 # Mac App Store
-mas 'Bear', id: 1091189122
-mas 'GarageBand', id: 682658836 
+# mas 'Bear', id: 1091189122
+# mas 'GarageBand', id: 682658836 
 mas 'Playgrounds', id: 1496833156 
 mas 'SQLPro for SQLite', id: 586001240
-mas 'PiPifier', id: 1160374471
+# mas 'PiPifier', id: 1160374471
 mas 'Pastebot', id: 1179623856
 mas 'Moom', id: 419330170
 mas 'Soulver', id: 413965349
-mas 'Pages', id: 409201541
-mas 'Day One', id: 1055511498
-mas 'Resizer', id: 411277085
-mas 'Kindle', id: 405399194
+# mas 'Pages', id: 409201541
+# mas 'Day One', id: 1055511498
+# mas 'Resizer', id: 411277085
+# mas 'Kindle', id: 405399194
 mas 'Space Gremlin', id: 414515628
-mas 'Microsoft Outlook', id: 985367838
-mas 'iMovie', id: 408981434
-mas 'Numbers', id: 409203825
-mas 'Keynote', id: 409183694
+# mas 'Microsoft Outlook', id: 985367838
+# mas 'iMovie', id: 408981434
+# mas 'Numbers', id: 409203825
+# mas 'Keynote', id: 409183694
