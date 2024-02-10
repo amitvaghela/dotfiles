@@ -45,6 +45,8 @@ cask 'android-platform-tools'
 cask 'istat-menus'
 cask 'bartender'
 cask 'raycast'
+cask 'iterm2'
+cask 'xcodes'
 
 # Quicklook
 cask 'qlmarkdown'
