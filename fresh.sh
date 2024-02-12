@@ -29,6 +29,7 @@ brew bundle --file ./Brewfile
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s ~/.dotfiles/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
 
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/dotfiles/.mackup.cfg $HOME/.mackup.cfg
