@@ -57,8 +57,6 @@ cask 'provisionql'
 # Fonts
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
 cask 'font-jetbrains-mono'
 cask 'font-fira-code-nerd-font'
 cask 'font-jetbrains-mono-nerd-font'
@@ -71,7 +69,7 @@ mas 'Playgrounds', id: 1496833156
 mas 'SQLPro for SQLite', id: 586001240
 # mas 'PiPifier', id: 1160374471
 mas 'Pastebot', id: 1179623856
-mas 'Moom', id: 419330170
+# mas 'Moom', id: 419330170
 mas 'Soulver', id: 413965349
 # mas 'Pages', id: 409201541
 # mas 'Day One', id: 1055511498
