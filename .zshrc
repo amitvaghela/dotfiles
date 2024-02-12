@@ -100,8 +100,8 @@ export LANG=en_US.UTF-8
 #
 # export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
-eval "$(pyenv init --path)"
+# eval "$(rbenv init - zsh)"
+# eval "$(pyenv init --path)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 source ~/.iterm2_shell_integration.zsh
 
