@@ -67,9 +67,6 @@ cask 'quicklook-csv'
 cask 'provisionql'
 
 # Fonts
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
@@ -77,6 +74,7 @@ cask 'font-source-serif-pro'
 cask 'font-jetbrains-mono'
 cask 'font-fira-code-nerd-font'
 cask 'font-jetbrains-mono-nerd-font'
+cask 'font-ibm-plex'
 
 # Mac App Store
 mas 'Bear', id: 1091189122
