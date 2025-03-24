@@ -100,22 +100,24 @@ export LANG=en_US.UTF-8
 #
 # export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init - zsh)"
-# eval "$(pyenv init --path)"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+
+eval "$(rbenv init - zsh)"
+eval "$(pyenv init -)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
-source ~/.iterm2_shell_integration.zsh
 
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/amit.vaghela/Development/flutter/bin:$PATH"
+export PATH="$HOME/Development/flutter/bin:$PATH"
 export PATH="$HOME/.pub-cache/bin:$PATH"
-export PATH="/Users/amit.vaghela/.local/bin:$PATH"
-
-
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export PATH="$HOME/.local/bin:$PATH"
+export ANDROID_HOME="$HOME/Library/Android/sdk" 
+export PATH="$PATH:$ANDROID_HOME/emulator" 
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/usr/local/opt/openjdk/include"export 
-OPENAI_API_KEY='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'
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
