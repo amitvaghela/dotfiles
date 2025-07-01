@@ -125,3 +125,25 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/Amit.Vaghela/.lmstudio/bin"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export CODEARTIFACT_DOMAIN=cj
+export CODEARTIFACT_DOMAIN_OWNER=329759377655
+export CODEARTIFACT_NPM_REPOSITORY=priv
+export CODEARTIFACT_YARN_REGISTRY=//${CODEARTIFACT_DOMAIN}-${CODEARTIFACT_DOMAIN_OWNER}.d.codeartifact.ap-southeast-2.amazonaws.com/npm/${CODEARTIFACT_NPM_REPOSITORY}/
+
+function refresh_code_arti_token() {
+  export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --region ap-southeast-2 --domain ${CODEARTIFACT_DOMAIN} --domain-owner ${CODEARTIFACT_DOMAIN_OWNER} --query authorizationToken --output text`
+  npm set ${CODEARTIFACT_YARN_REGISTRY}:_authToken ${CODEARTIFACT_AUTH_TOKEN}
+  echo "Refreshed AWS CodeArtifact auth token"
+}
+function switch_aws_profile() {
+  TMPFILE=$(mktemp)
+  egrep '^\[profile+' ~/.aws/config | tr -d '[]\015' | cut -f2- -d' ' | fzf -0 | account-to-environment-mapping.sh | tee $TMPFILE
+  source $TMPFILE
+  # TODO: "Did you activate the role plz if Forbidden error"?
+  AWS_PAGER= aws sts get-caller-identity | jq .
+}

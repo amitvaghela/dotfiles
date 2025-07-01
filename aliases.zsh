@@ -43,3 +43,4 @@ alias gpullama='TOKENIZERS_PARALLELISM=true pullama -r . -s $(git rev-parse -abb
 
 # alias reloadSSHAgenTS="ssh-add ~/.ssh/github_tigerspike && ssh-add ~/.ssh/gitlab_id_rsa && ssh-add ~/.ssh/personal_github && ssh-add ~/.ssh/transport-bitbucket && ssh-add ~/.ssh/cnx-bitbucket"
 alias reloadSSHAgenTS="ssh-add ~/.ssh/id_ed25519 && ssh-add ~/.ssh/transport-bitbucket && ssh-add ~/.ssh/cnx-bitbucket"
+alias aws_creds="aws-sso-util login && switch_aws_profile && refresh_code_arti_token"
