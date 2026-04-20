@@ -108,6 +108,7 @@ eval "$(pyenv init -)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+# export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Development/flutter/bin:$PATH"
 export PATH="$HOME/.pub-cache/bin:$PATH"
@@ -125,6 +126,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/Amit.Vaghela/.lmstudio/bin"
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -147,3 +149,8 @@ function switch_aws_profile() {
   # TODO: "Did you activate the role plz if Forbidden error"?
   AWS_PAGER= aws sts get-caller-identity | jq .
 }
+export PATH=$PATH:$HOME/.maestro/bin
+export PATH="$HOME/.maestro/bin:$PATH"
+
+# opencode
+export PATH=/Users/Amit.Vaghela/.opencode/bin:$PATH
